@@ -8,7 +8,7 @@ module.exports = {
  
   triggers: [
     "🐛 Bug",
-    "feat",
+    "feat: ",
     "💥 Change",
   ],
  
