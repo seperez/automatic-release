@@ -1,12 +1,12 @@
 {
   "name": "automatic-release",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-    "changelog": "cln"
+    "version": "auto-changelog -p --template changelog-template.hbs && git add CHANGELOG.md",
+    "changelog": "auto-changelog -p --template changelog-template.hbs"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,6 @@
   },
   "homepage": "https://github.com/seperez/automatic-release#readme",
   "devDependencies": {
-    "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
-    "automatic-changelog": "^1.0.5",
-    "husky": "^6.0.0",
-    "semantic-release": "^17.4.2"
+    "auto-changelog": "^2.2.1"
   }
 }
